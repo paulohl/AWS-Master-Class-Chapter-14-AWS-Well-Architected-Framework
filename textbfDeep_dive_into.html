@@ -1,0 +1,19 @@
+<div><b>Deep dive into system monitoring and predictive scaling</b></div><div>System monitoring is another cornerstone of reliability. AWS CloudWatch
+allows teams to monitor their resources and applications, providing
+detailed visibility into the architecture’s performance. CloudWatch
+alarms can notify teams of potential issues before they cause system
+failures. Furthermore, AWS Predictive Scaling forecasts future traffic,
+including spikes, using machine learning models and schedules
+appropriate scaling actions, ensuring that the system meets customer
+demands without manual intervention.</div><div><b>Application scenario: Online Education Platform</b> Imagine an
+online education platform that must remain available particularly during
+exam periods, demand spikes significantly. They implement AWS Auto
+Scaling and Elastic Load Balancing to manage this demand effectively.
+Auto Scaling adjusts resources based on real-time traffic data, ensuring
+that the infrastructure can handle sudden increases in user load without
+manual intervention. Elastic Load Balancing, meanwhile, distributes
+traffic across all available instances to avoid overloading any single
+server and to ensure smooth, consistent performance across the platform.
+Additionally, they utilize Amazon RDS with Multi-AZ deployments for
+their databases to ensure that the database layer remains highly
+available and resilient to DB instance failover.</div>

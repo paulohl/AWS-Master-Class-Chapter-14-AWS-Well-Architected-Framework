@@ -1,0 +1,25 @@
+<div><b>Detailed process of conducting well-architected reviews</b></div><ol><li><b>Preparation</b> :</li><li>Gather documentation and understanding of the current architecture.</li><li>Define the scope of the review, focusing on specific workloads or
+the entire environment.</li><li><b>Evaluation</b> :</li><li><b>Use the AWS Well-Architected Tool or manual checklists to
+evaluate the workload against the five pillars.</b></li><li><b>Interview key stakeholders to understand practical
+implementations and configurations.</b></li><li><b>Identification of issues</b> :</li><li>Classify issues based on severity and impact on the business.</li><li>Identify quick wins that can be implemented immediately and more
+complex issues that require detailed planning.</li><li><b>Recommendation phase</b> :</li><li>Provide actionable recommendations for each identified issue.</li><li>Develop a roadmap for implementing these recommendations,
+prioritized by impact and feasibility.</li><li><b>Implementation</b> :</li><li>Execute the improvements based on the roadmap.</li><li>Use AWS services and tools to automate and optimize the changes
+where possible.</li><li><b>Follow-up Review</b> :</li><li>Conduct follow-up reviews to ensure that the changes have been
+effective.</li><li>Adjust the improvement roadmap as new features and services become
+available on AWS.</li></ol><div><div><b>Use case: Software development firm</b></div><div>A mid-sized software development firm specializing in financial services
+applications engaged in a Well-Architected Review to address security
+concerns, cost issues, and performance inefficiencies.</div></div><ul><li><b>Security Enhancements</b> :</li><li>Implemented Amazon Cognito for user authentication to enhance
+security and simplify the management of user identities and access
+policies across applications.</li><li>Used AWS KMS to manage encryption keys for sensitive financial data,
+ensuring compliance with financial regulations and enhancing data
+security.</li><li><b>Cost optimization</b> :</li><li>Analyzed their AWS usage with AWS Cost Explorer to identify
+underutilized EC2 instances.</li><li>Implemented AWS Reserved Instances for predictable workloads and
+shifted non-critical, flexible workloads to Spot Instances, reducing
+costs by 30%.</li><li><b>Performance efficiency improvements</b> :</li><li>Transitioned to serverless architectures using AWS Lambda for
+several backend processes, reducing the need for constant EC2 uptime
+and thereby lowering costs and improving scalability.</li><li>Employed Amazon ElastiCache to handle frequent data retrieval
+requests, reducing load times and decreasing the burden on the
+databases.</li><li><b>Reliability adjustments</b> :</li><li>Configured Amazon RDS Multi-AZ deployments for critical databases to
+enhance fault tolerance and ensure high availability.</li><li>Set up AWS CloudFormation templates to standardize and automate the
+deployment of infrastructure, which improved operational resilience
+and reduced human error.</li></ul>

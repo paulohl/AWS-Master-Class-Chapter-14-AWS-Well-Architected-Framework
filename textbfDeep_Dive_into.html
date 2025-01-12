@@ -1,0 +1,19 @@
+<div><b>Deep Dive into Encryption</b></div><div>Encryption is the cornerstone of data security in cloud computing. AWS
+offers comprehensive solutions for encrypting data at rest and in
+transit. For instance, Amazon S3 provides built-in encryption features
+where users can automatically encrypt their data when it is stored. AWS
+Key Management Service (KMS) allows for easy management of encryption
+keys, enabling users to control access to their data across AWS
+services.</div><div><b>Real-life use case: Global E-commerce Company</b> Consider a global
+e-commerce platform that handles sensitive customer information,
+including payment data. To meet PCI DSS compliance, the company utilizes
+AWS services such as Amazon S3 and Amazon RDS, both configured to
+encrypt data at rest using AWS KMS. The encryption keys are rotated
+regularly, adding an additional layer of security and complexity for
+potential attackers.</div><div><b>Application scenario: Healthcare Startup</b> Imagine a startup in
+the healthcare sector looking to deploy a new patient management system
+on AWS. To comply with HIPAA regulations, the startup employs AWS IAM to
+manage access rights strictly and uses Amazon VPC to isolate their
+resources within a private network. Each data transfer is encrypted
+using TLS, and all sensitive patient data is encrypted at rest using AWS
+KMS, with keys managed under stringent policies.</div>

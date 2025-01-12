@@ -1,0 +1,41 @@
+<div><b>Detailed implementation with application examples</b></div><ul><li><b>Compute optimization</b> :</li><li><b>Principle</b> : Compute optimization involves assessing the
+compute needs of applications and ensuring that the resources align
+with those needs dynamically. This can mean choosing different types
+or sizes of instances based on the workload or employing
+auto-scaling to adjust resources as demand changes.</li><li><b>Real-life use case</b> : An online gaming company uses Amazon
+EC2 instances for their game servers. During peak playing times,
+they utilize EC2 Auto Scaling to automatically add more instances to
+maintain gameplay smoothness and responsiveness. They also use AWS
+Lambda for certain backend tasks to handle sudden spikes without
+provisioning additional EC2 resources.</li><li><b>Storage optimization</b> :</li><li><b>Principle</b> : Efficient storage involves selecting the right
+type of storage based on how data is accessed and stored. Using AWS,
+you can choose from options like Amazon S3 for object storage, EBS
+for block storage, or Amazon EFS for file storage depending on
+access patterns.</li><li><b>Real-life use case</b> : A financial analytics firm implements
+Amazon S3 for storing historical financial data, which is
+infrequently accessed but requires high durability. For real-time
+transaction data, they use Amazon EBS with Provisioned IOPS to
+ensure fast access times and strong I/O performance.</li><li><b>Database optimization</b> :</li><li><b>Principle</b> : Database optimization focuses on ensuring that
+the database configuration matches the use case, optimizing how data
+is retrieved and stored to enhance performance. Techniques include
+fine-tuning queries, using appropriate indexing, and choosing the
+right database service.</li><li><b>Real-life use case</b> : A retail company uses Amazon Aurora for
+their transactional database needs. Aurora provides the performance
+and availability of high-end commercial databases at a lower cost.
+They utilize Aurora’s replication capabilities to scale read
+operations across multiple instances and use automated query
+optimization to ensure efficient data retrieval.</li></ul><div><b>Application scenario: Media streaming service</b> Consider a media
+streaming service that needs to deliver high-quality video content to a
+global audience with minimal latency. The performance efficiency of
+their system is crucial for user satisfaction and service success.</div><ul><li><b>Compute optimization</b> : The service employs AWS Auto Scaling in
+conjunction with Amazon EC2 Spot Instances to manage compute capacity
+and costs effectively. During peak hours, such as new movie releases
+or live events, Auto Scaling adjusts the number of instances to handle
+increased demand without manual intervention.</li><li><b>Storage optimization</b> : They use Amazon S3 for storing static
+content like video files, taking advantage of S3’s durability and
+scalability. To reduce latency, they implement Amazon CloudFront as
+their CDN, caching content at edge locations closest to the users.</li><li><b>Database optimization</b> : The service utilizes Amazon RDS with
+read replicas to enhance database access speeds during high-query
+periods. They also employ Amazon ElastiCache to cache frequent
+database queries, reducing the load on the database and speeding up
+the retrieval of content metadata.</li></ul>

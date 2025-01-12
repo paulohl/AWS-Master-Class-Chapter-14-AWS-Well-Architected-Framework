@@ -1,0 +1,40 @@
+<div><b>Detailed implementation with application examples</b></div><ul><li><b>Resource tagging</b> :</li><li><b>Principle</b> : Effective resource tagging allows organizations
+to attribute AWS costs to specific departments, projects, or
+services, making it easier to manage budgets and ensure fiscal
+responsibility.</li><li><b>Real-life use case</b> : A multinational corporation implements
+a comprehensive tagging strategy where every EC2 instance, S3
+bucket, and RDS database is tagged with cost center, department, and
+project code tags. This enables their finance team to generate
+detailed monthly reports that show which departments or projects are
+driving costs, leading to more informed budgeting decisions.</li><li><b>Reserved capacity</b> :</li><li><b>Principle</b> : Reserved Instances (RIs) and Savings Plans offer
+a significant discount (up to 72%) over standard on-demand instance
+pricing in exchange for a commitment to use a specific number of
+resources for a one or three-year term.</li><li><b>Real-life use case</b> : An online retail company experiences
+consistent and predictable workloads on their e-commerce platform.
+By purchasing EC2 Reserved Instances for their web servers and RDS
+Reserved Instances for their transaction databases, they reduce
+their operational costs by up to 60%.</li><li><b>Usage Analysis</b> :</li><li><b>Principle</b> : Regular analysis of resource usage helps
+identify underutilized resources, which can be right-sized or shut
+down to save costs. Techniques include analyzing performance metrics
+to find opportunities for downsizing or moving to a less expensive
+resource.</li><li><b>Real-life use case</b> : A software development company uses AWS
+Cost Explorer to monitor their AWS spending and usage patterns. They
+identify several underutilized EC2 instances that were oversized
+based on their actual computing needs. By right sizing these
+instances, they achieve substantial cost savings without impacting
+performance.</li></ul><div><b>Application scenario: Startup company</b> Consider a tech startup
+that is rapidly scaling but also needs to manage its limited budget
+effectively. They prioritize cost optimization to ensure their growth
+does not lead to unsustainable expenses.</div><ul><li><b>Resource tagging</b> : The startup implements detailed tagging for
+all their resources, categorizing them by team and environment
+(development, staging, production). This allows them to track exactly
+where their cloud spend is going and identify areas where costs can be
+reduced.</li><li><b>Reserved capacity</b> : Knowing their base level of compute and
+database needs are stable and predictable, the startup invests in
+Reserved Instances for their core services, which drastically cuts
+their ongoing cloud costs.</li><li><b>Usage analysis</b> : They regularly review their AWS usage with
+AWS Cost Explorer, identifying peak usage times and underutilized
+resources. They implement AWS Auto Scaling to adjust their resource
+levels dynamically, increasing during peak times and decreasing during
+off-hours. Additionally, they use AWS Lambda for asynchronous tasks to
+further reduce costs by paying only for the compute time used.</li></ul>

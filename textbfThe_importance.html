@@ -1,0 +1,16 @@
+<div><b>The importance of fault tolerance and failover strategies</b></div><div>Fault tolerance is critical in designing reliable systems. AWS
+encourages the use of decoupled components where possible, so failures
+in one area do not cascade to others. Using services like Amazon RDS
+Multi-AZ deployments or Amazon S3’s cross-region replication can ensure
+that if one instance or one data center fails, the process or data
+remains available using the replicated resources in another location.</div><div><b>Real-life use case: Major streaming service</b> Consider a major
+streaming service that experiences millions of simultaneous streams
+during popular live events. To handle this, they employ Amazon EC2 Auto
+Scaling and Amazon CloudFront to manage the load. EC2 Auto Scaling
+automatically adjusts the number of EC2 instances up or down according
+to conditions defined for the load, while CloudFront delivers content
+from the nearest edge location to minimize latency and manage more users
+efficiently. Additionally, they utilize AWS Elastic Load Balancing to
+distribute incoming traffic across multiple targets, such as Amazon EC2
+instances, containers, and IP addresses, in multiple Availability Zones,
+which increases the fault tolerance of the application.</div>

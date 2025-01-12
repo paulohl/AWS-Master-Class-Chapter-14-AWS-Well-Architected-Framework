@@ -1,0 +1,35 @@
+<div><b>Detailed implementation with application examples</b></div><ul><li><b>Fault tolerance implementation</b> :</li><li><b>Principle</b> : Fault tolerance involves designing a system that
+has the capacity to remain operational even if some of its
+components fail. AWS promotes the use of decoupling components and
+redundancy to achieve this.</li><li><b>Real-life use case</b> : A global financial services firm
+utilizes Amazon EC2 Auto Scaling and Multi-AZ deployments for their
+critical databases. During an AZ failure, the traffic is
+automatically rerouted to instances in another AZ, ensuring that
+their financial transactions are not disrupted.</li><li><b>Disaster recovery techniques</b> :</li><li><b>Principle</b> : Disaster recovery is critical for minimizing
+downtime and data loss in the event of a major incident. AWS offers
+several tools like Amazon RDS that support easy configuration of
+multi-regional backups, enhancing data durability and availability.</li><li><b>Real-life use case</b> : A media streaming company uses Amazon
+S3 cross-region replication to automatically replicate data across
+regions, safeguarding against data loss if one region suffers a
+severe outage.</li><li><b>Monitoring and remediation strategies</b> :</li><li><b>Principle</b> : Effective monitoring and the ability to respond
+automatically to potential issues are crucial for maintaining system
+reliability. AWS provides Amazon CloudWatch for monitoring and AWS
+Lambda for executing remediation actions based on specific triggers.</li><li><b>Real-life use case</b> : An e-commerce platform employs Amazon
+CloudWatch to monitor their application performance metrics in real
+time. They use AWS Lambda to automate responses to specific alerts,
+such as scaling up EC2 instances during sudden spikes in traffic to
+maintain service availability.</li></ul><div><b>Application scenario: Large e-Commerce platform</b> Imagine a large
+e-commerce platform that experiences its highest traffic during the
+holiday season. The reliability of their systems during this period is
+crucial for their profitability and customer satisfaction.</div><ul><li><b>Fault tolerance</b> : They implement an Elastic Load Balancing
+(ELB) setup that distributes incoming traffic across multiple Amazon
+EC2 instances in different Availability Zones, ensuring that the
+failure of one instance or one AZ does not affect the overall
+availability of their platform.</li><li><b>Disaster recovery</b> : The platform uses Amazon RDS with
+automatic backup enabled and a recovery point objective (RPO) of 5
+minutes. They also employ AWS Backup to manage backups across their
+AWS services in a centralized manner, ensuring they can quickly
+recover in the event of a disaster.</li><li><b>Monitoring and remediation</b> : Utilizing AWS CloudWatch, they
+monitor application and infrastructure health. If a drop in
+performance is detected, AWS Lambda scripts automatically adjust
+capacity or restart instances without human intervention.</li></ul>
